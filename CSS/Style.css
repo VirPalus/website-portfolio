@@ -1,0 +1,35 @@
+:root {
+    --baseBackground: url("../IMG/Background.avif");
+    --baseBlack: rgba(20, 25, 23, 1);
+    --baseWhite: rgba(255, 255, 255, 1);
+    --accentColorDotNet: rgba(230, 175, 60, 1.0);
+    --accentColorUnreal: rgba(0, 160, 230, 1.0);
+    --whiteLine: rgba(255, 255, 255, 0.1);
+    --fontFamily: "Roboto", Helvetica, Arial, sans-serif;
+    --fontBaseSize: 1rem;
+    --fontBaseWeight: 400;
+    --fontBaseLineHeight: 1.5;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--baseBlack);
+    color: var(--baseWhite);
+    background-image: var(--baseBackground);
+    font-family: var(--fontFamily);
+    font-size: var(--fontBaseSize);
+    font-weight: var(--fontBaseWeight);
+    line-height: var(--fontBaseLineHeight);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-position: 0 0;
+    margin: 0;
+}
+
+a {
+    color: var(--baseWhite);
+}
