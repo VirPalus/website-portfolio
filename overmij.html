@@ -6,15 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Style.css">
     <title>Over Mij</title>
   </head>
-  <body>
-    <div id="navbar"></div>
-
+  <body class="overmij">
+    <header id="navbar"></header>
+    <main>
+      <div class="underConstruction">
+        <img src="IMG/UnderConstruction.jpg" alt="">
+      </div>
+    </main>
     <script>
-      fetch("navbar.html")
-        .then((r) => r.text())
-        .then((html) => (document.getElementById("navbar").innerHTML = html));
+      fetch("navbar.html").then((r) => r.text()).then((html) => (document.getElementById("navbar").innerHTML = html));
     </script>
   </body>
 </html>
