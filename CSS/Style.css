@@ -72,7 +72,6 @@ a {
   background-color: var(--baseBlack);
   border-bottom: 1px solid var(--baseGray);
   backdrop-filter: blur(10px);
-  padding: 0rem 1rem;
   position: fixed;
   top: 0;
 }
@@ -84,6 +83,8 @@ a {
   margin: 0 auto;
   max-width: 1200px;
   height: 5rem;
+  padding-left: 1rem;
+padding-right: 1rem;
 }
 
 .navBarMenu {
@@ -153,4 +154,10 @@ a {
   box-shadow:
     0 18px 60px rgba(0,0,0,0.55),
     0 0 0 1px rgba(0,0,0,0.35);
+}
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
