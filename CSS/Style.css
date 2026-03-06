@@ -2,7 +2,7 @@
   --baseBackground: url("../IMG/Background.avif");
   --baseBlack: rgba(20,20,20,1);
   --baseGray: rgba(60,60,60,1);
-  --baseWhite: rgba(200,200,200,1);
+  --baseWhite: rgba(225,225,225,1);
 
   --LineColor: rgba(255,255,255,0.07);
 
@@ -93,7 +93,7 @@ a:hover::after{
   justify-content:space-between;
   align-items:center;
   max-width:1200px;
-  margin:0 auto;
+  margin: 0.5rem auto;
 }
 
 .navBarLogo{
@@ -157,7 +157,7 @@ body.overmij  .navBarMenu .navOvermij::after{
 
 .container{
   max-width:1200px;
-  margin:6rem auto;
+  margin: 7rem auto;
 }
 
 .block{
