@@ -13,9 +13,13 @@
     <title>Mario Moerman | Home</title>
   </head>
   <body>
+
     <header id="navbar"></header>
+
     <main>
+
       <div class="container">
+
         <section class="hero heroWelkom block">
 
           <div class="heroTekst">
@@ -68,25 +72,79 @@
           </div>
           
         </section>
-          <section class="hero block" id="gemaaktId" aria-label="Wat heb ik gemaakt">
-            <article>
-                <h3>Portfolio Website</h3>
-                <p>
-                  Persoonlijke portfolio-website met een moderne donkere interface, opgebouwd uit duidelijke secties en kaart-gebaseerde componenten. 
-                </p>
-                <p>
-                  Het ontwerp combineert een strakke layout, consistente typografie en responsieve structuren om projecten overzichtelijk te presenteren op verschillende schermformaten.
-                </p>
-                <br>
-                <p>
-                  Focus: duidelijke interface · gestructureerde opbouw · consistente componenten · multi-device ondersteuning
-                </p>
-            </article>
-          </section>
+        <section class="hero block" id="gemaaktId" aria-label="Wat heb ik gemaakt">
+
+          <article>
+              <h3>Portfolio Website</h3>
+              <p>
+                Persoonlijke portfolio-website met een moderne donkere interface, opgebouwd uit duidelijke secties en kaart-gebaseerde componenten. 
+              </p>
+              <p>
+                Het ontwerp combineert een strakke layout, consistente typografie en responsieve structuren om projecten overzichtelijk te presenteren op verschillende schermformaten.
+              </p>
+              <br>
+              <p>
+                Focus: duidelijke interface · gestructureerde opbouw · consistente componenten · multi-device ondersteuning
+              </p>
+          </article>
+          
+        </section>
+        <section class="container techStack">
+
+          <div class="block">
+            <h3>Technologieën</h3>
+
+            <div class="techGrid">
+
+              <div class="techItem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                <span>C#</span>
+              </div>
+
+              <div class="techItem">
+                <img src="https://cdn.simpleicons.org/dotnet/512BD4" alt=".NET">
+                <span>.NET</span>
+              </div>
+
+              <div class="techItem">
+                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL">
+                <span>SQL</span>
+              </div>
+
+              <div class="techItem">
+                <img src="https://cdn.simpleicons.org/unrealengine/FFFFFF" alt="Unreal Engine">
+                <span>Unreal Engine</span>
+              </div>
+
+              <div class="techItem">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML">
+                <span>HTML</span>
+              </div>
+
+              <div class="techItem">
+                <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS">
+                <span>CSS</span>
+              </div>
+
+              <div class="techItem">
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
       </div>
+
     </main>
+
+    <div id="footer"></div>
+    
     <script>
-      fetch("navbar.html").then(response => response.text()).then(html => document.getElementById("navbar").innerHTML = html);
+      fetch("navbar.html").then(r=>r.text()).then(h=>navbar.innerHTML=h);
+      fetch("footer.html").then(r=>r.text()).then(h=>footer.innerHTML=h);
     </script>
+
   </body>
 </html>
