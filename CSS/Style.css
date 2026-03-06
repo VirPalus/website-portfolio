@@ -1,7 +1,7 @@
 :root{
   --baseBackground: url("../IMG/Background.avif");
   --baseBlack: rgba(20,20,20,1);
-  --baseGray: rgba(60,60,60,1);
+  --baseGray: rgba(80,80,80,1);
   --baseWhite: rgba(225,225,225,1);
 
   --LineColor: rgba(255,255,255,0.07);
