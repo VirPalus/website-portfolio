@@ -10,25 +10,83 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/Style.css" />
-    <title>Home</title>
+    <title>Mario Moerman | Home</title>
   </head>
   <body>
     <header id="navbar"></header>
     <main>
       <div class="container">
-        <section class="heroWelkom">
-          <h3>.NET-software | Webplatformen | Unreal Engine Gameontwikkeling</h3>
-          <h1>Welkom, mijn naam is Mario Moerman.</h1>
-          <p>Ik ben programmeur in opleiding met een sterke interesse in .NET-applicaties, webplatformen en gameontwikkeling.</p>
-          <p>Ik werk graag aan technische projecten waarin logica, structuur en performantie centraal staan en waarin ideeën worden vertaald naar software-oplossingen.</p>
-          <p>In dit portfolio toon ik een selectie van projecten die laten zien hoe ik systemen ontwerp, ontwikkel en verder verfijn.</p>
+        <section class="hero heroWelkom block">
+
+          <div class="heroTekst">
+            <p class="zeroTopMargin label">.NET-software | Webplatformen | Unreal Engine Gameontwikkeling</p>
+            <h1>Welkom,</h1>
+            <p>Mijn naam is Mario ik ben een programmeur in opleiding aan de <span class="thomasmore"><a href="https://thomasmore.be/nl/opleidingen/graduaat/programmeren/antwerpen/basistraject">Hogeschool Thomas More</a></span> in Lier,</p>
+            <p>met een sterke interesse in .NET-applicaties, webplatformen en gameontwikkeling.</p>
+            <br>
+            <p>Ik werk graag aan technische projecten waarin logica, structuur en performantie centraal staan,</p>
+            <p>en waarin ideeën worden vertaald naar fantastische softwareoplossingen.</p>
+            <br>
+            <p>Hier presenteer ik een selectie van projecten die mijn vaardigheden in softwareontwikkeling illustreren.</p>
+          </div>
+
+          <div class="fotoMario">
+            <img src="IMG/MarioMoerman.jpg" alt="Mario Moerman">
+          </div>
+
+          <div class="verLine"></div>
+
+          <div class="sectieLink">
+            <p class="label">Hello I'm Mario</p>
+            <h2 class="sectieTitel">Over Mij</h2>
+            <a href="overmij.html">Lees meer →</a>
+          </div>
+
         </section>
+        <section class="hero heroBlocks" id="geleerdId" aria-label="Wat heb ik geleerd">
+          
+          <div class="block">
+            <h3>Front-End</h3>
+            <p>
+              Overzichtelijke, toegankelijke UI met HTML/CSS en moderne tooling. Gericht op duidelijkheid en gebruiksgemak.
+            </p>
+          </div>
+          
+          <div class="block">
+            <h3>Back-End</h3>
+            <p>
+              ASP.NET Core API’s, authenticatie, validatie, domain-gedreven structuur, node.js react & react native.
+            </p>
+          </div>
+          
+          
+          <div class="block">
+            <h3>Data & Cloud</h3>
+            <p>
+              SQL-ontwerp, EF Core, migraties en CI-klare configuraties.
+            </p>
+          </div>
+          
+        </section>
+          <section class="hero block" id="gemaaktId" aria-label="Wat heb ik gemaakt">
+            <article>
+                <h3>Portfolio Website</h3>
+                <p>
+                  Persoonlijke portfolio-website met een moderne donkere interface, opgebouwd uit duidelijke secties en kaart-gebaseerde componenten. 
+                </p>
+                <p>
+                  Het ontwerp combineert een strakke layout, consistente typografie en responsieve structuren om projecten overzichtelijk te presenteren op verschillende schermformaten.
+                </p>
+                <br>
+                <p>
+                  Focus: duidelijke interface · gestructureerde opbouw · consistente componenten · multi-device ondersteuning
+                </p>
+            </article>
+          </section>
       </div>
     </main>
     <script>
-      fetch("navbar.html")
-        .then((r) => r.text())
-        .then((html) => (document.getElementById("navbar").innerHTML = html));
+      fetch("navbar.html").then(response => response.text()).then(html => document.getElementById("navbar").innerHTML = html);
     </script>
   </body>
 </html>
