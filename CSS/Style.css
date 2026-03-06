@@ -53,8 +53,8 @@ body {
   margin: 0;
 }
 
-h1 { font-size: 2.25rem; } 
-h2 { font-size: 2rem; }
+h1 { font-size: 2rem; } 
+h2 { font-size: 1.75rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1rem; }
@@ -64,6 +64,10 @@ a {
   text-decoration: none;
   font-weight: 1000;
   color: var(--baseGray);
+}
+
+p{
+  margin: 0;
 }
 
 .navBar {
@@ -82,9 +86,7 @@ a {
   align-items: center;
   margin: 0 auto;
   max-width: 1200px;
-  height: 5rem;
-  padding-left: 1rem;
-padding-right: 1rem;
+  padding: 0 1rem;
 }
 
 .navBarMenu {
@@ -96,7 +98,6 @@ padding-right: 1rem;
 .navBarMenu a:not(.navBtn) {
   position: relative;
   display: inline-block;
-  padding-bottom: 6px;
   transition: color .2s ease;
 }
 
@@ -125,8 +126,8 @@ padding-right: 1rem;
 }
 
 .navBtn {
-  padding: .5rem .95rem;
-  border-radius: .55rem;
+  padding:.25rem .5rem;
+  border-radius: 1rem;
   border: 1px solid var(--accentColor);
   color: var(--accentColor);
   transition: all .2s ease;
@@ -155,9 +156,9 @@ padding-right: 1rem;
     0 18px 60px rgba(0,0,0,0.55),
     0 0 0 1px rgba(0,0,0,0.35);
 }
-.content {
+.container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 100px auto auto auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }

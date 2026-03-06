@@ -3,23 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/Style.css" />
     <title>Home</title>
   </head>
   <body>
     <header id="navbar"></header>
     <main>
-      <div class="content">
-        <div class="underConstruction">
-        <img src="IMG/UnderConstruction.jpg" alt="">
-      </div>
+      <div class="container">
+        <section class="heroWelkom">
+          <h3>.NET-software | Webplatformen | Unreal Engine Gameontwikkeling</h3>
+          <h1>Welkom, mijn naam is Mario Moerman.</h1>
+          <p>Ik ben programmeur in opleiding met een sterke interesse in .NET-applicaties, webplatformen en gameontwikkeling.</p>
+          <p>Ik werk graag aan technische projecten waarin logica, structuur en performantie centraal staan en waarin ideeën worden vertaald naar software-oplossingen.</p>
+          <p>In dit portfolio toon ik een selectie van projecten die laten zien hoe ik systemen ontwerp, ontwikkel en verder verfijn.</p>
+        </section>
       </div>
     </main>
     <script>
-      fetch("navbar.html").then((r) => r.text()).then((html) => (document.getElementById("navbar").innerHTML = html));
+      fetch("navbar.html")
+        .then((r) => r.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
     </script>
   </body>
 </html>
