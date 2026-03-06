@@ -1,5 +1,7 @@
 :root{
   --baseBackground: url("../IMG/Background.avif");
+  --baseBackgroundColor: rgba(0, 0, 0, 0.35);
+
   --baseBlack: rgba(25, 25, 25, 1);
   --baseGray: rgba(75,75,75,1);
   --baseWhite: rgba(225,225,225,1);
@@ -11,7 +13,10 @@
 
   --accentColorDotNet: rgb(170,90,170);
   --accentColorUnreal: rgba(0,160,230,1);
+  
   --thomasmoreColor: rgba(250,100,50,1);
+
+  --drop: 0 10px 25px rgba(0, 0, 0, 0.6);
 
   --linkColor: var(--accentColor);
 
@@ -164,8 +169,8 @@ body.overmij  .navBarMenu .navOvermij::after{
   padding:2rem;
   border:1px solid var(--LineColor);
   border-radius:2rem;
-  background:rgba(0,0,0,0.35);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  background:var(--baseBackgroundColor);
+  box-shadow: var(--drop);
 }
 
 .underConstruction{
@@ -181,12 +186,10 @@ body.overmij  .navBarMenu .navOvermij::after{
   max-width:min(900px,90vw);
   height:auto;
 
-  border:2px solid rgba(255,255,255,0.10);
+  border:2px solid var(--LineColor);
   border-radius:28px;
 
-box-shadow:
-  0 18px 60px rgba(0,0,0,0.55),
-  0 0 0 1px rgba(0,0,0,0.35);
+box-shadow: var(--drop);
 }
 
 .hero {
@@ -212,7 +215,7 @@ box-shadow:
 .fotoMario img{
   width:100%;
   border-radius:50%;
-  box-shadow:0 10px 25px rgba(0,0,0,0.6);
+  box-shadow: var(--drop);
 }
 
 .thomasmore a{
