@@ -1,0 +1,40 @@
+string input;
+int pijlen, landingsplaats, totaal;
+
+pijlen = 3;
+totaal = 0;
+
+
+for (int i = 1; i <= pijlen; i++)
+{
+    do
+    {
+        Console.Write("Landingsplaats: ");
+        input = Console.ReadLine();
+    } while (!(int.TryParse(input, out landingsplaats) && landingsplaats > 0 && landingsplaats <= 4));
+
+    switch (landingsplaats)
+    {
+        case 1:
+            totaal += 0;
+        break;
+        case 2:
+            totaal += 20;
+        break;
+        case 3:
+            totaal += 50;
+        break;
+        case 4:
+            totaal += 100;
+        break;
+        default:
+        Console.WriteLine("ERROR");
+        break;
+    }
+}
+
+
+Console.WriteLine($"U hebt {totaal} punten behaald");
+
+Console.ReadLine();
+
