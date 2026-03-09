@@ -53,9 +53,6 @@ h4{ font-size: 1.25rem; }
 h5{ font-size: 1rem; }
 h6{ font-size: .75rem; }
 
-h1, h2, h3, h4, h5, h6, p{
-  margin-top: 0;
-}
 
 p{
   margin-bottom: 0;
@@ -525,6 +522,83 @@ body.contact .navBarMenu .navContactLink::after{
   overflow: auto;
 }
 
+.gameVideo{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: var(--drop);
+}
+
+/* Alleen Unreal pagina */
+body.unreal .sectionSplit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+body.unreal .sectionMain{
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+body.unreal .sectionSide{
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 220px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.unreal .sectionSide img{
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.overMijMedia{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.overMijAfbeelding{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--LineColor);
+  border-radius: 1rem;
+  box-shadow: var(--drop);
+}
+
+.overMijTabel{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.overMijTabel tr{
+  border-bottom: 1px solid var(--LineColor);
+}
+
+.overMijTabel td{
+  padding: 1rem 0.75rem;
+  vertical-align: top;
+}
+
+.overMijTabel tr:first-child td{
+  color: var(--accentColor);
+  font-weight: 800;
+}
+
+
 @media (max-width: 900px){
   .heroBlocks,
   .contactGrid,
@@ -545,6 +619,28 @@ body.contact .navBarMenu .navContactLink::after{
 
   .sectionSide{
     width: 100%;
+  }
+
+  body.unreal .sectionSplit{
+    flex-wrap: wrap;
+  }
+
+  body.unreal .sectionMain,
+  body.unreal .sectionSide{
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  body.unreal .sectionSide{
+    justify-content: flex-start;
+  }
+
+  body.unreal .sectionSide img{
+    max-width: 180px;
+  }
+
+  .overMijMedia{
+    grid-template-columns: 1fr;
   }
 }
 
