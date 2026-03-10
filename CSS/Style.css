@@ -163,6 +163,14 @@ a:hover::after{
   background: var(--accentColorHover);
 }
 
+#logo{
+  transition: opacity 0.3s ease;
+}
+
+#logo:hover{
+  opacity: 0.5;
+}
+
 .brandLogo{
   color: var(--accentColor);
   font-family: var(--fontLogo);
