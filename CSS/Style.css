@@ -1,5 +1,5 @@
 :root{
-  --baseBackground: url("../IMG/Background.avif");
+  --baseBackground: url("../IMG/background.avif");
   --baseBackgroundColor: rgba(0, 0, 0, 0.35);
 
   --baseBlack: rgba(25, 25, 25, 1);
