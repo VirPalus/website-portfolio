@@ -264,6 +264,11 @@ body.contact .navBarMenu .navContactLink::after{
   flex-wrap: wrap;
 }
 
+.sectionSplit .sectionSide {
+  align-self: center;
+}
+
+
 .sectionMain{
   flex: 1 1 0;
 }
